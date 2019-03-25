@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="使用Hexo搭建自己的博客"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="白云心城的博客">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=2.10.1" />
+
+
+
+<link rel="canonical" href="http://yoursite.com/2018/09/26/使用Hexo搭建自己的博客/"/>
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/nprogress/nprogress.min.css" />
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.10.1" />
+
+
+
+  
+
+
+
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+<script>
+  window.config = {"title":"白云心城的博客","subtitle":null,"description":null,"author":"白云心城","language":null,"timezone":null,"url":"http://yoursite.com","root":"/","permalink":":year/:month/:day/:title/","permalink_defaults":null,"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"post","titlecase":false,"external_link":true,"filename_case":0,"render_drafts":false,"post_asset_folder":true,"relative_link":false,"future":true,"highlight":{"enable":true,"auto_detect":false,"line_number":true,"tab_replace":null,"first_line_number":"always1"},"default_category":"uncategorized","category_map":null,"tag_map":null,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","per_page":10,"pagination_dir":"page","theme":"even","deploy":{"type":"git","repository":"git@github.com:byxc/byxc.github.io.git","branch":"master"},"ignore":[],"logo":"白云心城","keywords":null,"index_generator":{"per_page":10,"order_by":"-date","path":""},"archive_generator":{"per_page":10,"yearly":true,"monthly":true,"daily":false},"category_generator":{"per_page":10},"marked":{"gfm":true,"pedantic":false,"sanitize":false,"tables":true,"breaks":true,"smartLists":true,"smartypants":true,"modifyAnchors":"","autolink":true},"tag_generator":{"per_page":10},"server":{"port":4000,"log":false,"compress":false,"header":true},"tweetableQuote":{"quote_font_color":"#258fb8","quote_font_size":"1.7em","link_font_color":"#6e7b8d","link_font_size":"1.0em","via_twitter_account":"","related_twitter_accounts":""},"toc":true,"since":2018,"favicon":"/favicon.png","rss":false,"menu":{"Home":"/","Archives":"/archives/"},"color":"default","mode":"default","fancybox":true,"pjax":true,"copyright":{"enable":false,"license":"<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\">知识共享署名-非商业性使用 4.0 国际许可协议</a>"},"reward":{"enable":false,"qrCode":{"wechat":null,"alipay":null}},"social":{"email":"924698172@qq.com","stack-overflow":null,"twitter":null,"facebook":null,"linkedin":null,"google":null,"github":"https://github.com/byxc","weibo":null,"zhihu":null,"douban":null,"pocket":null,"tumblr":null,"instagram":null},"leancloud":{"app_id":null,"app_key":null},"baidu_analytics":null,"baidu_verification":null,"google_analytics":null,"google_verification":null,"disqus_shortname":null,"changyan":{"appid":null,"appkey":null},"livere_datauid":null,"version":"2.10.1"};
+</script>
+
+		<title> 使用Hexo搭建自己的博客 - 白云心城的博客 </title>
+	</head>
+
+	<body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">白云心城的博客</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            首页
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            归档
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+		<header id="header" class="header"><div class="header-container">
+
+	<div class="logo-wrapper">
+		<a href="/." class="logo">
+			<span class="icon"><img src="/avatar.jpg"></img></span>
+			<span class="title">白云心城<span>
+		</a>
+	</div>
+
+	<nav class="site-navbar">
+		
+			<ul id="menu" class="menu">
+				
+					<li class="menu-item">
+						<a class="menu-item-link" href="/">
+							
+							
+								首页
+							
+						</a>
+					</li>
+				
+					<li class="menu-item">
+						<a class="menu-item-link" href="/archives/">
+							
+							
+								归档
+							
+						</a>
+					</li>
+				
+			</ul>
+		
+	</nav>
+</div>
+
+		</header>
+		<div class="container" id="mobile-panel">
+
+			<main id="main" class="main">
+				<div class="content-wrapper">
+					<div id="content" class="content">
+						
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          使用Hexo搭建自己的博客
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2018-09-26
+        </span>
+        
+        
+      </div>
+    </header>
+
+    
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-text">准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-text">开始使用Hexo</span></a></li></ol>
+    </div>
+  </div>
+
+
+
+    <div class="post-content">
+      
+        <p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> 是基于Node.js的一款快速、间接且高效的博客框架，支持Markdown，可更换主题，拥有丰富的插件，使用非常方便。</p>
+<a id="more"></a>
+<p><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo官网</a></p>
+<h3><span id="准备">准备</span></h3><ol>
+<li><a href="https://nodejs.org" target="_blank" rel="noopener">Node.js</a></li>
+<li><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></li>
+<li>GitHub账号</li>
+</ol>
+<p><strong>安装Node.js</strong></p>
+<p>点击 <a href="https://nodejs.org" target="_blank" rel="noopener">链接</a> 到Node.js官网下载对应平台的安装程序即可安装。</p>
+<p><strong>安装Hexo</strong></p>
+<p>所有必备的应用程序安装完成后，即可使用npm安装Hexo。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p><strong>安装Git</strong></p>
+<ul>
+<li>Windows下载并安装 <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git</a></li>
+<li>Mac使用<a href="http://mxcl.github.io/homebrew/" target="_blank" rel="noopener">Homebrew</a>：<code>brew install git</code> ；或下载 <a href="https://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="noopener">安装程序</a> 安装。</li>
+</ul>
+<p><strong>配置GitHub仓库</strong></p>
+<ul>
+<li><p>注册一个 <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> 账号</p>
+</li>
+<li><p>创建一个GitHub仓库<br>新仓库名使用 <strong>“UserName”+“github.io”</strong> 的格式命名，之后访问的域名就会是 <strong><a href="https://UserName.github.io" target="_blank" rel="noopener">https://UserName.github.io</a></strong> 的形式</p>
+</li>
+<li><p>开启GitHub Page服务<br>在仓库的 <strong>Settings</strong> 中找到 <strong>GitHub Pages</strong> 配置，并点击 <strong>Choose a theme</strong> 任意选择一个主题，此时会跳转到仓库，然后我们再查看 <strong>Settings</strong> 就可以看见开启 <strong>GitHub Pages</strong> 之后得到的域名，就可以使用该域名进行访问了</p>
+</li>
+</ul>
+<h3><span id="开始使用hexo">开始使用Hexo</span></h3><p><strong>1.建立本地站点</strong></p>
+<p>首先在你想要用于存放站点的目录位置使用如下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br></pre></td></tr></table></figure>
+<p>新建完成后，指定文件夹的目录如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+<p><strong>_config.yml</strong> 文件为站点的配置信息文件，可以用于修改一些网站参数，详细的配置参数可以参考Hexo官网的 <a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">文档</a>。</p>
+<p><strong>package.json</strong>文件为站点的依赖配置文件，EJS，Stylus 和 Markdown render 已默认安装。</p>
+<p><strong>scaffolds</strong>为模板文件夹，当您新建文章时，Hexo会根据scaffold来建立文件。<br>Hexo的模板是指在新建的markdown文件中默认填充的内容。例如，如果您修改scaffold/post.md中的Front-matter内容，那么每次新建一篇文章时都会包含这个修改。</p>
+<p><strong>source</strong>为用户资源存放文件夹，除 _posts 文件夹之外，开头命名为 _ (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。</p>
+<p><strong>themes</strong>为主题文件夹，用于存放Hexo的主题文件，Hexo 会根据主题来生成静态页面。</p>
+<p><strong>2.启用本地站点</strong><br>使用如下命令生成静态文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<p>该命令可以使用如下参数</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-d, –deploy</td>
+<td>文件生成后立即部署网站</td>
+</tr>
+<tr>
+<td>-w, –watch</td>
+<td>监视文件变动</td>
+</tr>
+</tbody>
+</table>
+<p>使用如下命令启动服务器。默认情况下，访问网址为：<a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-p</code>, <code>--port</code></td>
+<td>重设端口</td>
+</tr>
+<tr>
+<td><code>-s</code>, <code>--static</code></td>
+<td>只使用静态文件</td>
+</tr>
+<tr>
+<td><code>-l</code>, <code>--log</code></td>
+<td>启动日记记录，使用覆盖记录格式</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3.关联GitHub</strong><br>编辑本地hexo目录下的_config.yml文件下的deploy配置，设置部署位置，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: &lt;repository url&gt;</span><br><span class="line">  branch: [branch]</span><br><span class="line">  message: [message]</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>repo</td>
+<td>库（Repository）地址</td>
+</tr>
+<tr>
+<td>branch</td>
+<td>分支名称。如果您使用的是 GitHub 或者 GitCafe 的话，程序会尝试自动检测。</td>
+</tr>
+<tr>
+<td>message</td>
+<td>自定义提交信息（默认为 <code>Site updated: YYYY-MM-DD HH:mm:ss</code>）</td>
+</tr>
+</tbody>
+</table>
+<p>然后可使用如下命令开始部署</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-g</code>, <code>--generate</code></td>
+<td>部署之前预先生成静态文件</td>
+</tr>
+</tbody>
+</table>
+<p>部署完成后就可以使用 <strong><a href="https://UserName.github.io" target="_blank" rel="noopener">https://UserName.github.io</a></strong> 进行访问查看效果了。</p>
+<p><strong>4.新建一篇博客</strong></p>
+<p>使用如下命令新建一篇博客：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post &quot;博客文章名&quot;</span><br></pre></td></tr></table></figure>
+<p>在生成及部署文章之前需要安装一个扩展，使用如下命令进行安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>使用编辑器编辑好文章后使用命令：<code>hexo d -g</code> 生成并部署，完成之后使用 <strong><a href="https://UserName.github.io" target="_blank" rel="noopener">https://UserName.github.io</a></strong> 访问就可以查看到新生成的文章了。</p>
+<p><strong>5.更换主题</strong><br>首先在Hexo的官方 <a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题市场</a> 中找到自己喜欢的主题，点击选中的主题进入到主题的GitHub仓库，复制主题仓库的地址，找到Hexo在本地的主目录(步骤1中存放的位置)，使用如下命令克隆主题文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone &lt;repository url&gt; themes/&lt;主题名&gt;</span><br></pre></td></tr></table></figure>
+<p>或者进入Hexo主目录下的themes目录，将主题文件克隆至该目录下。<br><strong>注意：</strong> 部分主题可能需要安装插件，可以参考相应主题的说明文档进行设置。<br>下载好主题的文件后需要修改Hexo的配置文件_config.yml (该文件存放于Hexo的主目录下)。修改其中的theme字段信息，参考如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: landscape</span><br></pre></td></tr></table></figure>
+<p>然后使用如下命令清楚缓存、重新生成、启动网站就可以看到效果了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+      
+      
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2018/10/29/搭建cocoapods私有库/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">搭建cocoapods私有库</span>
+        <span class="prev-text nav-mobile">上一篇</span>
+      </a>
+    
+    
+      <a class="next" href="/2018/07/12/使用Jenkins-fastlane进行持续集成/">
+        <span class="next-text nav-default">使用Jenkins+fastlane进行持续集成</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+
+      </footer>
+    
+
+  </article>
+
+
+					</div>
+					
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+				</div>
+			</main>
+			<div class="back-to-top" id="back-to-top">
+				<i class="iconfont icon-up"></i>
+			</div>
+		</div>
+
+		<footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:924698172@qq.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/byxc" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+    
+  </div>
+
+
+
+<div class="copyright">
+<!--
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+-->
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2018 - 
+    
+    2019
+
+			<!-- <span class="heart">
+				<i class="iconfont icon-heart"></i>
+			</span> -->
+			<span class="author">白云心城的博客.</span>
+			<span>Powered by Hexo</span>
+  </span>
+</div>
+
+		</footer>
+
+		
+  
+  
+
+  
+
+
+
+		
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/pjax/jquery.pjax.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/nprogress/nprogress.min.js"></script>
+  
+
+
+		<script type="text/javascript" src="/js/src/even.js?v=2.10.1"></script>
+
+	</body>
+</html>

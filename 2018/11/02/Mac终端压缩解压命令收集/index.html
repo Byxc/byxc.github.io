@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+
+  <meta name="description" content="Mac终端压缩解压命令收集"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="白云心城的博客">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.png?v=2.10.1" />
+
+
+
+<link rel="canonical" href="http://yoursite.com/2018/11/02/Mac终端压缩解压命令收集/"/>
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lib/nprogress/nprogress.min.css" />
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.10.1" />
+
+
+
+  
+
+
+
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+<script>
+  window.config = {"title":"白云心城的博客","subtitle":null,"description":null,"author":"白云心城","language":null,"timezone":null,"url":"http://yoursite.com","root":"/","permalink":":year/:month/:day/:title/","permalink_defaults":null,"source_dir":"source","public_dir":"public","tag_dir":"tags","archive_dir":"archives","category_dir":"categories","code_dir":"downloads/code","i18n_dir":":lang","skip_render":null,"new_post_name":":title.md","default_layout":"post","titlecase":false,"external_link":true,"filename_case":0,"render_drafts":false,"post_asset_folder":true,"relative_link":false,"future":true,"highlight":{"enable":true,"auto_detect":false,"line_number":true,"tab_replace":null,"first_line_number":"always1"},"default_category":"uncategorized","category_map":null,"tag_map":null,"date_format":"YYYY-MM-DD","time_format":"HH:mm:ss","per_page":10,"pagination_dir":"page","theme":"even","deploy":{"type":"git","repository":"git@github.com:byxc/byxc.github.io.git","branch":"master"},"ignore":[],"logo":"白云心城","keywords":null,"index_generator":{"per_page":10,"order_by":"-date","path":""},"archive_generator":{"per_page":10,"yearly":true,"monthly":true,"daily":false},"category_generator":{"per_page":10},"marked":{"gfm":true,"pedantic":false,"sanitize":false,"tables":true,"breaks":true,"smartLists":true,"smartypants":true,"modifyAnchors":"","autolink":true},"tag_generator":{"per_page":10},"server":{"port":4000,"log":false,"compress":false,"header":true},"tweetableQuote":{"quote_font_color":"#258fb8","quote_font_size":"1.7em","link_font_color":"#6e7b8d","link_font_size":"1.0em","via_twitter_account":"","related_twitter_accounts":""},"toc":true,"since":2018,"favicon":"/favicon.png","rss":false,"menu":{"Home":"/","Archives":"/archives/"},"color":"default","mode":"default","fancybox":true,"pjax":true,"copyright":{"enable":false,"license":"<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\">知识共享署名-非商业性使用 4.0 国际许可协议</a>"},"reward":{"enable":false,"qrCode":{"wechat":null,"alipay":null}},"social":{"email":"924698172@qq.com","stack-overflow":null,"twitter":null,"facebook":null,"linkedin":null,"google":null,"github":"https://github.com/byxc","weibo":null,"zhihu":null,"douban":null,"pocket":null,"tumblr":null,"instagram":null},"leancloud":{"app_id":null,"app_key":null},"baidu_analytics":null,"baidu_verification":null,"google_analytics":null,"google_verification":null,"disqus_shortname":null,"changyan":{"appid":null,"appkey":null},"livere_datauid":null,"version":"2.10.1"};
+</script>
+
+		<title> Mac终端压缩解压命令收集 - 白云心城的博客 </title>
+	</head>
+
+	<body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">白云心城的博客</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            首页
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            归档
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+		<header id="header" class="header"><div class="header-container">
+
+	<div class="logo-wrapper">
+		<a href="/." class="logo">
+			<span class="icon"><img src="/avatar.jpg"></img></span>
+			<span class="title">白云心城<span>
+		</a>
+	</div>
+
+	<nav class="site-navbar">
+		
+			<ul id="menu" class="menu">
+				
+					<li class="menu-item">
+						<a class="menu-item-link" href="/">
+							
+							
+								首页
+							
+						</a>
+					</li>
+				
+					<li class="menu-item">
+						<a class="menu-item-link" href="/archives/">
+							
+							
+								归档
+							
+						</a>
+					</li>
+				
+			</ul>
+		
+	</nav>
+</div>
+
+		</header>
+		<div class="container" id="mobile-panel">
+
+			<main id="main" class="main">
+				<div class="content-wrapper">
+					<div id="content" class="content">
+						
+  
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          Mac终端压缩解压命令收集
+        
+      </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2018-11-02
+        </span>
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+
+    <div class="post-content">
+      
+        <p>本文收集了一些Mac终端下常用的压缩解压文件命令，以供查阅。</p>
+<a id="more"></a>
+<p>tar<br>解包：tar xvf FileName.tar<br>打包：tar cvf FileName.tar DirName<br>（注：tar是打包，不是压缩！）<br>———————————————<br>.gz<br>解压1：gunzip FileName.gz<br>解压2：gzip -d FileName.gz<br>压缩：gzip FileName<br>.tar.gz 和 .tgz<br>解压：tar zxvf FileName.tar.gz<br>压缩：tar zcvf FileName.tar.gz DirName<br>———————————————<br>.bz2<br>解压1：bzip2 -d FileName.bz2<br>解压2：bunzip2 FileName.bz2<br>压缩： bzip2 -z FileName<br>.tar.bz2<br>解压：tar jxvf FileName.tar.bz2<br>压缩：tar jcvf FileName.tar.bz2 DirName<br>———————————————<br>.bz<br>解压1：bzip2 -d FileName.bz<br>解压2：bunzip2 FileName.bz<br>压缩：未知<br>.tar.bz<br>解压：tar jxvf FileName.tar.bz<br>压缩：未知<br>———————————————<br>.Z<br>解压：uncompress FileName.Z<br>压缩：compress FileName<br>.tar.Z<br>解压：tar Zxvf FileName.tar.Z<br>压缩：tar Zcvf FileName.tar.Z DirName<br>———————————————<br>.zip<br>解压：unzip FileName.zip<br>压缩：zip FileName.zip DirName<br>———————————————<br>.rar<br>解压：rar x FileName.rar<br>压缩：rar a FileName.rar DirName<br>———————————————<br>.lha<br>解压：lha -e FileName.lha<br>压缩：lha -a FileName.lha FileName<br>———————————————<br>.rpm<br>解包：rpm2cpio FileName.rpm | cpio -div<br>———————————————<br>.deb<br>解包：ar p FileName.deb data.tar.gz | tar zxf -<br>———————————————<br>.tar .tgz .tar.gz .tar.Z .tar.bz .tar.bz2 .zip .cpio .rpm .deb .slp .arj .rar .ace .lha .lzh .lzx .lzs .arc .sda .sfx .lnx .zoo .cab .kar .cpt .pit .sit .sea<br>解压：sEx x FileName.<em><br>压缩：sEx a FileName.</em> FileName</p>
+<p>sEx只是调用相关程序，本身并无压缩、解压功能，请注意！<br>gzip 命令<br>减少文件大小有两个明显的好处，一是可以减少存储空间，二是通过网络传输文件时，可以减少传输的时间。gzip 是在 Linux 系统中经常使用的一个对文件进行压缩和解压缩的命令，既方便又好用。<br>语法：gzip [选项] 压缩（解压缩）的文件名该命令的各选项含义如下：<br>-c 将输出写到标准输出上，并保留原有文件。-d 将压缩文件解压。-l 对每个压缩文件，显示下列字段：     压缩文件的大小；未压缩文件的大小；压缩比；未压缩文件的名字-r 递归式地查找指定目录并压缩其中的所有文件或者是解压缩。-t 测试，检查压缩文件是否完整。-v 对每一个压缩和解压的文件，显示文件名和压缩比。-num 用指定的数字 num 调整压缩的速度，-1 或 –fast 表示最快压缩方法（低压缩比），-9 或–best表示最慢压缩方法（高压缩比）。系统缺省值为 6。指令实例：<br>gzip <em>% 把当前目录下的每个文件压缩成 .gz 文件。gzip -dv </em>% 把当前目录下每个压缩的文件解压，并列出详细的信息。gzip -l *% 详细显示例1中每个压缩的文件的信息，并不解压。gzip usr.tar% 压缩 tar 备份文件 usr.tar，此时压缩文件的扩展名为.tar.gz。</p>
+
+      
+    </div>
+
+    
+      
+      
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2018/11/16/PlistBuddy的基本使用/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">PlistBuddy的基本使用</span>
+        <span class="prev-text nav-mobile">上一篇</span>
+      </a>
+    
+    
+      <a class="next" href="/2018/10/29/搭建cocoapods私有库/">
+        <span class="next-text nav-default">搭建cocoapods私有库</span>
+        <span class="prev-text nav-mobile">下一篇</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+
+      </footer>
+    
+
+  </article>
+
+
+					</div>
+					
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+				</div>
+			</main>
+			<div class="back-to-top" id="back-to-top">
+				<i class="iconfont icon-up"></i>
+			</div>
+		</div>
+
+		<footer id="footer" class="footer">
+
+  <div class="social-links">
+    
+      
+        
+          <a href="mailto:924698172@qq.com" class="iconfont icon-email" title="email"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://github.com/byxc" class="iconfont icon-github" title="github"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+    
+  </div>
+
+
+
+<div class="copyright">
+<!--
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+-->
+  <span class="copyright-year">
+    
+    &copy; 
+     
+      2018 - 
+    
+    2019
+
+			<!-- <span class="heart">
+				<i class="iconfont icon-heart"></i>
+			</span> -->
+			<span class="author">白云心城的博客.</span>
+			<span>Powered by Hexo</span>
+  </span>
+</div>
+
+		</footer>
+
+		
+  
+  
+
+  
+
+
+
+		
+  
+
+
+
+  
+  
+
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/pjax/jquery.pjax.min.js"></script>
+  
+
+  
+    <script type="text/javascript" src="/lib/nprogress/nprogress.min.js"></script>
+  
+
+
+		<script type="text/javascript" src="/js/src/even.js?v=2.10.1"></script>
+
+	</body>
+</html>
